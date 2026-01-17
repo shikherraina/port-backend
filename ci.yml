@@ -1,0 +1,11 @@
+name: Backend CI
+
+on:
+  push:
+    branches: [be-first]
+  pull_request:
+    branches: [be-first]
+
+jobs:
+  backend-ci:
+    uses: shikherraina/port-infra/.github/workflows/backend-ci.yml@main
